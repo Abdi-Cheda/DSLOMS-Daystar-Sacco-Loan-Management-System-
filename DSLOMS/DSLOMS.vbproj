@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D0B7477-EF3A-4252-94DD-D27D142B669A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DSLOMS.My.MyApplication</StartupObject>
+    <RootNamespace>DSLOMS</RootNamespace>
+    <AssemblyName>DSLOMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DSLOMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DSLOMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_transactions.Designer.vb">
+      <DependentUpon>add_transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_transactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_loan_approval.Designer.vb">
+      <DependentUpon>admin_loan_approval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin_loan_approval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_login.Designer.vb">
+      <DependentUpon>admin_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_page.Designer.vb">
+      <DependentUpon>admin_page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deduct_vary_authority.Designer.vb">
+      <DependentUpon>deduct_vary_authority.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deduct_vary_authority.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dsloms.Designer.vb">
+      <DependentUpon>Dsloms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dsloms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgot_password.Designer.vb">
+      <DependentUpon>forgot_password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="forgot_password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home_page.Designer.vb">
+      <DependentUpon>home_page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="home_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan_management.Designer.vb">
+      <DependentUpon>loan_management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan_management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan_page.Designer.vb">
+      <DependentUpon>loan_page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan_statement.Designer.vb">
+      <DependentUpon>loan_statement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan_statement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_page.Designer.vb">
+      <DependentUpon>login_page.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="membership_application.Designer.vb">
+      <DependentUpon>membership_application.vb</DependentUpon>
+    </Compile>
+    <Compile Include="membership_application.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="member_management.Designer.vb">
+      <DependentUpon>member_management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="member_management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="next_of_kin.Designer.vb">
+      <DependentUpon>next_of_kin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="next_of_kin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reports_and_statements.Designer.vb">
+      <DependentUpon>reports_and_statements.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reports_and_statements.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary_advance.Designer.vb">
+      <DependentUpon>salary_advance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="salary_advance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="savings_and_deposit_management.Designer.vb">
+      <DependentUpon>savings_and_deposit_management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="savings_and_deposit_management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccountForm.Designer.vb">
+      <DependentUpon>UserAccountForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserAccountForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loan_repayment.Designer.vb">
+      <DependentUpon>loan_repayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loan_repayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_statement.Designer.vb">
+      <DependentUpon>view_statement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_statement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome_Dsloms.Designer.vb">
+      <DependentUpon>welcome_Dsloms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="welcome_Dsloms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_transactions.resx">
+      <DependentUpon>add_transactions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_loan_approval.resx">
+      <DependentUpon>admin_loan_approval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_login.resx">
+      <DependentUpon>admin_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_page.resx">
+      <DependentUpon>admin_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deduct_vary_authority.resx">
+      <DependentUpon>deduct_vary_authority.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dsloms.resx">
+      <DependentUpon>Dsloms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgot_password.resx">
+      <DependentUpon>forgot_password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home_page.resx">
+      <DependentUpon>home_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan_management.resx">
+      <DependentUpon>loan_management.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan_page.resx">
+      <DependentUpon>loan_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan_statement.resx">
+      <DependentUpon>loan_statement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_page.resx">
+      <DependentUpon>login_page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="membership_application.resx">
+      <DependentUpon>membership_application.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="member_management.resx">
+      <DependentUpon>member_management.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="next_of_kin.resx">
+      <DependentUpon>next_of_kin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reports_and_statements.resx">
+      <DependentUpon>reports_and_statements.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary_advance.resx">
+      <DependentUpon>salary_advance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="savings_and_deposit_management.resx">
+      <DependentUpon>savings_and_deposit_management.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAccountForm.resx">
+      <DependentUpon>UserAccountForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loan_repayment.resx">
+      <DependentUpon>loan_repayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_statement.resx">
+      <DependentUpon>view_statement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome_Dsloms.resx">
+      <DependentUpon>welcome_Dsloms.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
